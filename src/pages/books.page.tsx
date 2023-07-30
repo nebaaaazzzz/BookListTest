@@ -32,7 +32,8 @@ function Books() {
   };
   return (
     <PullToRefresh onRefresh={handleRefresh}>
-      <div className="flex justify-center mt-10">
+      <div className="flex flex-col items-center mt-10">
+        <h1 className="font-bold text-2xl">Books</h1>
         <div className="flex flex-wrap justify-center gap-1 w-1/2 ">
           {data?.pages.map((page, index) => (
             <Fragment key={index}>
